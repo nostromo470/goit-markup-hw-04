@@ -13,6 +13,7 @@
 <body>
     <header class="page-header">
         <div class="container">
+            
             <nav class="header-nav">
                 <a href="./index.html" class="logo"><span class="web-color">Web</span>Studio</a>
                 <ul class="header-links">                    
@@ -23,8 +24,28 @@
                 </ul>
 
                 <ul class="contacts-list">
-                    <li><a href="mailto:info@devstudio.com" class="mail-tel">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="mail-tel">+38 096 111 11 11</a></li>
+                   
+                <li>
+                    <a href="mailto:info@devstudio.com">
+                        <svg width=16px height=12px>
+                            
+                            <use href="./images/contacts/symbol-defs-contacts.svg#envelope" width=16px height=12px> 
+                            </use> 
+                            <span>info@devstudio</span>
+                        </svg> 
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tel:+380961111111">
+                        <svg width=10px height=16px>
+                
+                            <use href="./images/contacts/symbol-defs-contacts.svg#smartphone" width=10px height=16px>
+                            </use>
+                            <span>+38 096 111 11 11</span>
+                        </svg>
+                    </a>
+                </li>
                 </ul>
             </nav>                       
         </div>
@@ -259,12 +280,12 @@
             </div>
         </Section>
 
-        <section class="section">
+        <section class="clients">
             <div class="container">
                 <h2>Постоянные клиенты</h2> 
                 
                 <ul class="clients-logos">
-                    <li>
+                    <li class="clients-link">
                         <a href="#">
                             <svg width="170px" height="90px">
                                 <use href="./images/clients-icons/symbol-defs.clients-logo.svg#logo1" width=44.27px height="49.23px">
@@ -273,7 +294,7 @@
                         </a>
                     </li>
                 
-                    <li>
+                    <li class="clients-link">
                         <a href="#">
                             <svg width="170px" height="90px">
                                 <use href="./images/clients-icons/symbol-defs.clients-logo.svg#logo2" width=40px height="52px">
@@ -282,7 +303,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="clients-link">
                         <a href="#">
                             <svg width="170px" height="90px">
                                 <use href="./images/clients-icons/symbol-defs.clients-logo.svg#logo3" width=41px height="42.6px">
@@ -291,7 +312,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="clients-link">
                         <a href="#">
                             <svg width="170px" height="90px">
                                 <use href="./images/clients-icons/symbol-defs.clients-logo.svg#logo4" width=79.66px height="42.02px">
@@ -300,7 +321,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="clients-link">
                         <a href="#">
                             <svg width="170px" height="90px">
                                 <use href="./images/clients-icons/symbol-defs.clients-logo.svg#logo5" width=59px height="47px">
@@ -309,7 +330,7 @@
                         </a>
                     </li>
 
-                    <li>
+                    <li class="clients-link">
                         <a href="#">
                             <svg width="170px" height="90px">
                                 <use href="./images/clients-icons/symbol-defs.clients-logo.svg#logo6" width=88.48px height="45.44px">
@@ -317,35 +338,70 @@
                             </svg>
                         </a>
                     </li>
-
-
-
                 </ul>
-
             </div>
-
-            
-
-
-
         </section>
-
-
-
     </main>    
-    <footer>
+    <footer> 
         <div class="container">
-                <a href="./index.html" class="logo-foot"><span class="web-color">Web</span>Studio</a>
-                <h3 style="position: absolute; visibility: hidden;">Контакты</h3>
-                <!-- В окончательном варианте данную строку скрыть от просмотра!-->
-                <address>
-                    <ul class="adress-text">
-                        <li><a href="https://goo.gl/maps/aYshD57GHmabaSue6" target="_blank" class="adress"> г. Киев, пр-т Леси Украинки,
-                                26</a></li>
-                        <li><a href="mailto:info@example.com" class="mail-tel-foot">info@example.com</a></li>
-                        <li><a href="tel:+380991111111" class="mail-tel-foot">+38 099 111 11 11</a></li>
+            <ul class="footer-sections">
+                <li>
+                    <a href="./index.html" class="logo-foot"><span class="web-color">Web</span>Studio</a>
+                    <h3 style="position: absolute; visibility: hidden;">Контакты</h3>
+                    <!-- В окончательном варианте данную строку скрыть от просмотра!-->
+                    <address>
+                        <ul class="adress-text">
+                            <li><a href="https://goo.gl/maps/aYshD57GHmabaSue6" target="_blank" class="adress"> г. Киев, пр-т Леси Украинки,
+                                    26</a></li>
+                            <li><a href="mailto:info@example.com" class="mail-tel-foot">info@example.com</a></li>
+                            <li><a href="tel:+380991111111" class="mail-tel-foot">+38 099 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </li>
+                <li>
+                    <h3>присоединяйтесь</h3>
+                    <ul class="social-link-footer">
+                        <li>
+                        <a href="#">
+                            <svg>
+                                <use href="./images/social-icons/symbol-defs.svg#instagram" width=20px>
+                                </use>
+                            </svg>
+                        </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <svg>
+                                    <use href="./images/social-icons/symbol-defs.svg#twitter" width=20px>
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <svg>
+                                    <use href="./images/social-icons/symbol-defs.svg#facebook" width=20px>
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <svg>
+                                    <use href="./images/social-icons/symbol-defs.svg#linkedin" width=20px>
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        
                     </ul>
-                </address>
+                </li>
+
+            </ul>
+                
         </div>
     </footer>
 </body>

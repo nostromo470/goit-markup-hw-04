@@ -68,13 +68,10 @@ section {
   margin-right: 331px;
 }
 
-.contacts-list li:not(:last-child) {
-  margin-right: 50px;
-}
-
 .header-nav,
 .contacts-list {
   display: flex;
+  align-items: center;
 }
 
 .header-nav {
@@ -104,21 +101,36 @@ section {
   color: red;
 }
 
-.mail-tel {
+.contacts-list svg {
+  fill: var(--grey-text);
+}
+
+.contacts-list svg:hover,
+.contacts-list svg:focus {
+  fill: var(--blue-text);
+}
+
+.contacts-list a {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list span {
   color: var(--grey-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  margin-left: 10px;
 }
 
-.mail-tel:hover,
-.mail-tel:focus {
+.contacts-list span:hover,
+.contacts-list span:focus {
   color: var(--blue-text);
 }
 
-.mail-tel:active {
-  color: red;
+.contacts-list li:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Hero  */
@@ -363,7 +375,6 @@ section {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  padding: 0px;
 }
 
 .clients-logos svg:hover,
@@ -378,6 +389,49 @@ footer {
   background-color: var(--back-hero-footer-grey);
   padding-bottom: 60px;
   padding-top: 60px;
+}
+
+.footer-sections {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-sections > li:last-child {
+  padding-left: 70px;
+}
+
+.footer-sections h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text);
+  margin-bottom: 20px;
+}
+
+.social-link-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-link-footer svg {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  fill: var(--white-text);
+  padding-left: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link-footer li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link-footer svg:hover,
+.social-link-footer svg:focus {
+  background-color: var(--blue-text);
 }
 
 footer address {
