@@ -25,8 +25,25 @@
                 </ul>
     
                 <ul class="contacts-list">
-                    <li><a href="mailto:info@devstudio.com" class="mail-tel">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="mail-tel">+38 096 111 11 11</a></li>
+                    <li>
+                        <a href="mailto:info@devstudio.com">
+                            <svg width=16px height=12px>
+                                <use href="./images/icons.svg#envelope" width=16px height=12px>
+                                </use>
+                                <span>info@devstudio</span>
+                            </svg>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="tel:+380961111111">
+                            <svg width=10px height=16px>
+                                <use href="./images/icons.svg#smartphone" width=10px height=16px>
+                                </use>
+                                <span>+38 096 111 11 11</span>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -145,18 +162,65 @@
     </main>
     <footer>
         <div class="container">
-            <a href="./index.html" class="logo-foot"><span class="web-color">Web</span>Studio</a>
-            <h3 style="position: absolute; visibility: hidden;">Контакты</h3>
-            <!-- В окончательном варианте данную строку скрыть от просмотра!-->
-            <address>
-                <ul class="adress-text">
-                    <li><a href="https://goo.gl/maps/aYshD57GHmabaSue6" target="_blank" class="adress"> г. Киев, пр-т Леси
-                            Украинки,
-                            26</a></li>
-                    <li><a href="mailto:info@example.com" class="mail-tel-foot">info@example.com</a></li>
-                    <li><a href="tel:+380991111111" class="mail-tel-foot">+38 099 111 11 11</a></li>
-                </ul>
-            </address>
+            <ul class="footer-sections">
+                <li>
+                    <a href="./index.html" class="logo-foot"><span class="web-color">Web</span>Studio</a>
+                    <h3 style="position: absolute; visibility: hidden;">Контакты</h3>
+                    <!-- В окончательном варианте данную строку скрыть от просмотра!-->
+                    <address>
+                        <ul class="adress-text">
+                            <li><a href="https://goo.gl/maps/aYshD57GHmabaSue6" target="_blank" class="adress"> г. Киев,
+                                    пр-т Леси Украинки,
+                                    26</a></li>
+                            <li><a href="mailto:info@example.com" class="mail-tel-foot">info@example.com</a></li>
+                            <li><a href="tel:+380991111111" class="mail-tel-foot">+38 099 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </li>
+                <li>
+                    <h3>присоединяйтесь</h3>
+                    <ul class="social-link-footer">
+                        <li>
+                            <a href="#">
+                                <svg>
+                                    <use href="./images/icons.svg#instagram" width=20px>
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#">
+                                <svg>
+                                    <use href="./images/icons.svg#twitter" width=20px>
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#">
+                                <svg>
+                                    <use href="./images/icons.svg#facebook" width=20px>
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#">
+                                <svg>
+                                    <use href="./images/icons.svg#linkedin" width=20px>
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </li>
+    
+            </ul>
+    
         </div>
     </footer>
 </body>
