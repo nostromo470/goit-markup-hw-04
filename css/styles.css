@@ -101,32 +101,26 @@ section {
   color: red;
 }
 
-.contacts-list svg {
-  fill: var(--grey-text);
-}
-
-.contacts-list svg:hover,
-.contacts-list svg:focus {
-  fill: var(--blue-text);
-}
-
-.contacts-list a {
-  display: flex;
-  align-items: center;
-}
-
-.contacts-list span {
-  color: var(--grey-text);
+.link {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  margin-left: 10px;
+  color: #757575;
+  display: flex;
+  align-items: center;
 }
 
-.contacts-list span:hover,
-.contacts-list span:focus {
+.link:hover,
+.link:focus {
   color: var(--blue-text);
+}
+
+.icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .contacts-list li:not(:last-child) {
@@ -335,30 +329,39 @@ section {
   display: block;
 }
 
-.social-icons {
+.social-icons-list {
   display: inline-flex;
   width: 270px;
+  align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.social-icons svg {
+.social-links {
   width: 44px;
   height: 44px;
   border: none;
   border-radius: 50%;
-  fill: #afb1b8;
-  padding-left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: #afb1b8;
 }
 
-.social-icons svg:hover,
-.social-icons svg:focus {
-  fill: var(--white-text);
+.social-links:hover,
+.social-links:focus {
+  color: #ffffff;
   background-color: var(--blue-text);
 }
 
-.social-icons li:not(:last-child) {
-  margin-right: 10px;
+.social-icon {
+  fill: currentColor;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: currentColor;
 }
 
 /* Наши клиенты */
@@ -373,23 +376,24 @@ section {
   margin-right: 30px;
 }
 
-.clients-logos svg {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  fill: #afb1b8;
-  width: 170px;
-  height: 90px;
+.svg {
+  fill: currentColor;
 }
 
 .clients-link {
+  width: 170px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
-.clients-logos svg:hover,
-.clients-logos svg:focus {
-  fill: var(--blue-text);
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--blue-text);
   border-color: var(--blue-text);
 }
 
@@ -420,27 +424,31 @@ footer {
   margin-bottom: 20px;
 }
 
-.social-link-footer {
-  display: flex;
-  flex-wrap: wrap;
+.social-icons-list-footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.social-link-footer svg {
+.social-links-footer {
   width: 44px;
   height: 44px;
   border: none;
   border-radius: 50%;
-  fill: var(--white-text);
-  padding-left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: var(--white-text);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-link-footer li:not(:last-child) {
-  margin-right: 10px;
+.social-icon-footer {
+  fill: currentColor;
 }
 
-.social-link-footer svg:hover,
-.social-link-footer svg:focus {
+.social-links-footer:hover,
+.social-links-footer:focus {
   background-color: var(--blue-text);
 }
 
